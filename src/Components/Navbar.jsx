@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="logo">
-        <img src="./images/netflix-logo.png" alt="" />
+        <img src="./img/netflix-logo.png" alt="" />
       </div>
       <ul>
         <li>
