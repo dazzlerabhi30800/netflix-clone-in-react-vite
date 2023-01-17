@@ -1,11 +1,30 @@
 header {
-  height: 480px;
+  height: 500px;
   width: 100%;
   display: flex;
-  background-repeat: no-repeat;
-  background-position: top;
-  /* background: url('/src/assets/header-images/chainsaw-man.png'); */
-  /* background-size: 100vw 100%; */
-  background-size: cover;
+  position: relative;
   transition: all 0.6s linear;
+}
+
+header .slider--container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+header .slider--container .slide {
+  white-space: nowrap;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 600%;
+  height: 500px;
+}
+.shifting {
+  transition: all 0.5s ease-in;
+}
+.slide img {
+  width: 100vw;
+  height: 500px;
 }
