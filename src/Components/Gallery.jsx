@@ -30,18 +30,28 @@ const Gallery = () => {
     } else {
       gallery.scrollLeft -= 100;
     }
-    // console.log(gallery.scrollLeft);
+    console.log(gallery.scrollLeft);
   };
 
   const handleButtons = () => {
+    const GalleryPercent = GalleryItem.current.offsetWidth - window.innerWidth;
     if (Gallery.current.scrollLeft <= 10) {
       Prev.current.style.opacity = 0;
-    } else if (Gallery.current.scrollLeft >= 1800) {
+    } else if (
+      Gallery.current.scrollLeft >= GalleryPercent &&
+      window.innerWidth >= 1200
+    ) {
+      Next.current.style.opacity = 0;
+    } else if (
+      Gallery.current.scrollLeft >= GalleryPercent &&
+      window.innerWidth <= 1200
+    ) {
       Next.current.style.opacity = 0;
     } else {
       Next.current.style.opacity = 1;
       Prev.current.style.opacity = 1;
     }
+    console.log(GalleryPercent);
   };
 
   useEffect(() => {
