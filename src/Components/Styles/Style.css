@@ -1,5 +1,6 @@
 @import "./Navbar.css";
 @import "./Header.css";
+@import "./Gallery.css";
 
 body {
   position: relative;

@@ -47,7 +47,7 @@ const Header = ({ headerImage }) => {
 
   return (
     <header
-      /* style={{ backgroundImage: `url(${headerBackground[counter]})` }} */
+      // style={{ backgroundImage: `url(${headerBackground[counter]})` }}
       onClick={changeBackground}
       ref={headerImage}
     >

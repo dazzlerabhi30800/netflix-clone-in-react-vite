@@ -1,0 +1,133 @@
+.gallery--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gallery--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  gap: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1rem;
+}
+
+.gallery--card {
+  position: relative;
+  padding: 1rem;
+  /* background: purple; */
+}
+
+.gallery {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 1rem 1rem 2rem 1rem;
+  position: relative;
+  height: 200px;
+  /* background: #fff; */
+}
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+.gallery-scroll {
+  display: flex;
+  position: absolute;
+  padding: 1rem;
+  left: 0;
+  height: 100%;
+  width: fit-content;
+  gap: 10px;
+}
+
+.btn {
+  position: absolute;
+  color: #fff;
+  background: red;
+  border: none;
+  outline: none;
+  top: 48%;
+  padding: 8px;
+  z-index: 444;
+  cursor: pointer;
+  transition: opacity 0.2s linear;
+}
+.btn.prev {
+  left: 0px;
+}
+.btn.next {
+  right: 0px;
+}
+
+.gallery--item {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform-origin: center;
+  width: 300px;
+  height: 200px;
+  align-items: flex-end;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s linear;
+}
+
+.gallery--item::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+.gallery--item:hover::after {
+  opacity: 1;
+}
+
+.gallery--item > .button--container {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+  /* background: rgba(0, 0, 0, 0.2); */
+  transform: translateY(100px);
+  z-index: 444;
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.4s linear;
+}
+.gallery--item:hover > .button--container {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.button--container > button {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.button--container .show {
+  background: #ed0e64;
+}
+.button--container .show:hover {
+  background: #f75493;
+}
+.button--container .like {
+  background: #4834fa;
+}
+.button--container .like:hover {
+  background: #7263f7;
+}

@@ -27,4 +27,5 @@ header .slider--container .slide {
 .slide img {
   width: 100vw;
   height: 500px;
+  object-fit: cover;
 }
