@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
-import Gallery from "./Components/Gallery";
+import GalleryTv from "./Components/GalleryTv";
 import Header from "./Components/Header";
+import MovieGallery from "./Components/MovieGallery";
 import Navbar from "./Components/Navbar";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Header />
       <main>
-        <Gallery />
+        <GalleryTv scrollDistance={150} />
+        <MovieGallery scrollDistance={150} />
       </main>
     </div>
   );
