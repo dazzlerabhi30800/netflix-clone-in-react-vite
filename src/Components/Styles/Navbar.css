@@ -20,7 +20,7 @@ nav {
   background: #000;
   top: 0;
   right: 0;
-  animation: show 2s linear forwards;
+  animation: show 2s linear forwards infinite alternate;
 }
 
 .logo img {

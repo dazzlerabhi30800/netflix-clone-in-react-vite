@@ -1,3 +1,7 @@
+:root {
+  --font-Montserrat: "Montserrat", sans-serif;
+}
+
 .gallery--wrapper {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,8 @@
   justify-content: center;
   color: #fff;
   gap: 1rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  font-family: var(--font-Montserrat);
   padding: 1rem;
 }
 
@@ -92,7 +97,7 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
   opacity: 0;
