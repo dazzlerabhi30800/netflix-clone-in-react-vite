@@ -31,6 +31,7 @@ const Header = ({ headerImage }) => {
   const checkIndex = () => {
     sliderContainer.current.classList.remove("shifting");
     let slideSize = sliderContainer.current.children[0].offsetWidth;
+
     if (counter === sliderContainer.current.children.length - 2) {
       sliderContainer.current.style.left = -(1 * slideSize) + "px";
       setCounter(0);
@@ -58,7 +59,7 @@ const Header = ({ headerImage }) => {
           onTransitionEnd={checkIndex}
         >
           {newSlides.map((img, i) => {
-            return <img src={img} key={i} alt="" />;
+            return <img className="slide--img" src={img} key={i} alt="" />;
           })}
         </div>
       </div>

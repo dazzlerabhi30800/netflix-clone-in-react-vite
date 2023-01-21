@@ -34,3 +34,21 @@ header .slider--container .slide {
   height: var(--height);
   object-fit: cover;
 }
+
+@media Screen and (max-width: 800px) {
+  header .slider--container .slide {
+    left: -100%;
+  }
+}
+
+@media Screen and (min-width: 800px) {
+  header .slider--container .slide {
+    left: -103%;
+  }
+}
+
+@media Screen and (min-width: 1200px) {
+  header .slider--container .slide {
+    left: -102%;
+  }
+}
