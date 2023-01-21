@@ -60,7 +60,7 @@ const KoreanGallery = ({ scrollDistance }) => {
   return (
     <div className="gallery--wrapper">
       <div className="gallery--container">
-        <h1 className="heading">Anime</h1>
+        <h1 className="heading">Koream Movies</h1>
         <div className="gallery--card">
           <div className="gallery" onScroll={handleButtons} ref={koreanGallery}>
             <div ref={koreanItem} className="gallery-scroll">
