@@ -62,7 +62,7 @@
   padding: 8px;
   z-index: 444;
   font-size: 1.2rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.2s linear;
 }
 .btn:hover {
@@ -131,18 +131,27 @@
   font-weight: 600;
   border-radius: 5px;
   color: #fff;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s ease-in;
 }
 .button--container .show {
   background: #ed0e64;
 }
-.button--container .show:hover {
-  background: #f75493;
-}
 .button--container .like {
   background: #4834fa;
 }
-.button--container .like:hover {
-  background: #7263f7;
+
+@media (hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
+  .button--container > button {
+    cursor: pointer;
+  }
+  .button--container .show:hover {
+    background: #f75493;
+  }
+  .button--container .like:hover {
+    background: #7263f7;
+  }
 }

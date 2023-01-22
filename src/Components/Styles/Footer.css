@@ -1,0 +1,28 @@
+footer {
+  padding: 1rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  background: linear-gradient(90deg, #1f1e1e, #292828);
+  font-family: var(--font-Montserrat);
+  color: #fff;
+}
+
+footer img {
+  width: 110px;
+  height: 60px;
+  object-fit: fill;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+footer span {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
