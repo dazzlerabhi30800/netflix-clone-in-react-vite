@@ -21,7 +21,7 @@ function App() {
         <AnimeGallery scrollDistance={150} />
         <KoreanGallery scrollDistance={150} />
         {/* <ScrollButton /> */}
-        {/* <TrailerContainer /> */}
+        <TrailerContainer />
       </main>
       <Footer />
     </div>

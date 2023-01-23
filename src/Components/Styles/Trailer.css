@@ -1,0 +1,27 @@
+.trailer--wrapper {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.trailer--container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: max-content;
+  height: 500px;
+}
+.sliding {
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.trailer--container .trailer {
+  width: 100vw;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center 20%;
+  background-size: cover;
+}

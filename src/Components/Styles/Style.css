@@ -4,6 +4,7 @@
 @import "./Gallery.css";
 @import "./Footer.css";
 @import "./ScrollButton.css";
+@import "./Trailer.css";
 
 body {
   position: relative;
