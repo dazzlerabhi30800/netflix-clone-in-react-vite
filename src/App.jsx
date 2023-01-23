@@ -8,6 +8,7 @@ import KoreanGallery from "./Components/KoreanGallery";
 import MovieGallery from "./Components/MovieGallery";
 import Navbar from "./Components/Navbar";
 import ScrollButton from "./Components/ScrollButton";
+import TrailerContainer from "./Components/TrailerContainer";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <MovieGallery scrollDistance={150} />
         <AnimeGallery scrollDistance={150} />
         <KoreanGallery scrollDistance={150} />
-        <ScrollButton />
+        {/* <ScrollButton /> */}
+        {/* <TrailerContainer /> */}
       </main>
       <Footer />
     </div>

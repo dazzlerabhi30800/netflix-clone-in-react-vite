@@ -129,16 +129,19 @@
   outline: none;
   padding: 8px;
   font-weight: 600;
-  border-radius: 5px;
   color: #fff;
-  /* cursor: pointer; */
   transition: all 0.3s ease-in;
+}
+.button--container > button > i {
+  margin-right: 7px;
 }
 .button--container .show {
   background: #ed0e64;
 }
 .button--container .like {
-  background: #4834fa;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid #ccc;
 }
 
 @media (hover: hover) {
@@ -152,6 +155,8 @@
     background: #f75493;
   }
   .button--container .like:hover {
-    background: #7263f7;
+    border: 1px solid transparent;
+    background: #fff;
+    color: #000;
   }
 }

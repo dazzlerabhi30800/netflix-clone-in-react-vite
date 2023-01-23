@@ -5,9 +5,10 @@ footer {
   align-items: center;
   gap: 2rem;
   margin-top: 3rem;
-  background: linear-gradient(90deg, #1f1e1e, #292828);
+  background: linear-gradient(90deg, #1f1e1e, #161616);
   font-family: var(--font-Montserrat);
-  color: #fff;
+  box-shadow: 1px 1px 5px 5px rgba(19, 18, 18, 0.301);
+  color: #918e8e;
 }
 
 footer img {
@@ -18,14 +19,12 @@ footer img {
 
 footer h2 {
   font-size: 1.2rem;
-  letter-spacing: 2px;
   font-weight: 500;
   margin: 0 auto;
 }
 
 footer span {
   font-size: 0.9rem;
-  letter-spacing: 1px;
   margin: 0 auto;
   text-align: center;
 }

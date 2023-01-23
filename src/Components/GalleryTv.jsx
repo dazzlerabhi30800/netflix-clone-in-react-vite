@@ -15,8 +15,12 @@ const Gallery = ({ scrollDistance }) => {
         key={i}
       >
         <div className="button--container">
-          <button className="show">Watch Now</button>
-          <button className="like">Add to Playlist</button>
+          <button className="show">
+            <i className="fas fa-play"></i>PLAY
+          </button>
+          <button className="like">
+            <i className="fas fa-plus"></i>MY LIST
+          </button>
         </div>
       </div>
     );
