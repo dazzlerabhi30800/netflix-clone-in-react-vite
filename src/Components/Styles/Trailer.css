@@ -34,10 +34,12 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.34);
-  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
   height: var(--trailer-height);
-  gap: 1rem;
+  gap: 2.5rem;
+  width: fit-content;
   padding: 3rem;
   color: #fff;
   font-family: var(--font-Montserrat);
@@ -45,7 +47,8 @@
 }
 
 .trailer--item > h3 {
-  font-size: calc(15px + 3vw);
+  font-size: calc(17px + 2vw);
+  width: 8ch;
 }
 
 .trailer--item > p {
@@ -76,8 +79,7 @@
   border: 1px solid transparent;
 }
 .btn--save {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(10px);
+  background: transparent;
   border: 1px solid #ccc;
 }
 
@@ -99,6 +101,11 @@
   .trailer--item {
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .trailer--item > h3 {
+    width: 100%;
   }
   .trailer--item > p {
     font-size: 0.9rem;
