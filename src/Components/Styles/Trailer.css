@@ -1,9 +1,13 @@
+:root {
+  --trailer-height: 600px;
+}
 .trailer--wrapper {
   position: relative;
-  height: 500px;
+  height: var(--trailer-height);
   width: 100%;
   overflow: hidden;
   transition: all 0.5s linear;
+  margin: 5rem 0;
 }
 
 .trailer--container {
@@ -12,16 +16,91 @@
   top: 0;
   left: -100vw;
   width: max-content;
-  height: 500px;
+  height: var(--trailer-height);
 }
 .sliding {
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .trailer--container .trailer {
   width: 100vw;
-  height: 500px;
+  height: var(--trailer-height);
   background-repeat: no-repeat;
   background-position: center 20%;
   background-size: cover;
+}
+
+.trailer--item {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(3px);
+  height: var(--trailer-height);
+  gap: 1rem;
+  padding: 3rem;
+  color: #fff;
+  font-family: var(--font-Montserrat);
+  z-index: 444;
+}
+
+.trailer--item > h3 {
+  font-size: calc(15px + 3vw);
+}
+
+.trailer--item > p {
+  min-width: 300px;
+  width: 35%;
+  max-width: 450px;
+  line-height: 1.5;
+}
+
+.trailer--item .btn--container {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn--container > button {
+  outline: none;
+  padding: 8px 10px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.btn--container > button > i {
+  margin-right: 7px;
+}
+
+.btn--play {
+  background: red;
+  border: 1px solid transparent;
+}
+.btn--save {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid #ccc;
+}
+
+@media (hover: hover) {
+  .btn--container > button {
+    cursor: pointer;
+  }
+  .btn--play:hover {
+    background: purple;
+  }
+  .btn--save:hover {
+    color: #000;
+    background: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+@media only Screen and (max-width: 600px) {
+  .trailer--item {
+    align-items: center;
+    text-align: center;
+  }
+  .trailer--item > p {
+    font-size: 0.9rem;
+  }
 }

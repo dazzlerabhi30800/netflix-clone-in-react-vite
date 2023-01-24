@@ -19,7 +19,8 @@ header .slider--container {
 header .slider--container .slide {
   white-space: nowrap;
   position: absolute;
-  left: -101%;
+  /* left: -101%; */
+  left: -100vw;
   top: 0;
   width: max-content;
   height: var(--height);

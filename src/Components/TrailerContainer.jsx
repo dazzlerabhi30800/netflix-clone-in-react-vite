@@ -30,14 +30,25 @@ const TrailerContainer = () => {
     setAllowShift(true);
   };
 
-  const trailerComp = newTrailer.map((src, i) => {
+  const trailerComp = newTrailer.map((data, i) => {
     return (
       <div
         className="trailer"
         key={i}
-        style={{ backgroundImage: `url(${src})` }}
+        style={{ backgroundImage: `url(${data.img})` }}
       >
-        Trailer-{i}
+        <div className="trailer--item">
+          <h3 className="trailer--title">{data.title}</h3>
+          <p>{data.description}</p>
+          <div className="btn--container">
+            <button className="btn--play">
+              <i className="fas fa-play"></i>Play Trailer
+            </button>
+            <button className="btn--save">
+              <i className="fas fa-plus"></i> My List
+            </button>
+          </div>
+        </div>
       </div>
     );
   });
